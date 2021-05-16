@@ -14,7 +14,7 @@ gem 'puma', '~> 4.1'
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -27,6 +27,9 @@ gem 'rack-cors'
 
 # background processing
 gem 'sidekiq'
+
+# authentication
+gem 'sorcery'
 
 # oauth2 api support
 gem 'doorkeeper'
@@ -43,6 +46,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'annotate'
   gem 'listen', '~> 3.2'
   gem 'rubocop'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
